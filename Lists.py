@@ -24,19 +24,19 @@ st.write("# Generi musicali")
 
 # Creiamo una barra laterale per scegliere il genere musicale
 selected_genre = st.sidebar.selectbox(
-    "Scegli il genere musicale",
+    "Select the musical Genre you want to listen to: ",
     list(music_genres.keys())
 )
 
 # Mostrare la canzone selezionata
 if selected_genre in music_genres:
-    st.write(f"## Canzoni {selected_genre}")
+    st.write(f"## Songs {selected_genre}")
     selected_song = st.selectbox(
-        "Scegli la canzone",
+        "Select the song",
         list(music_genres[selected_genre].keys())
     )
     selected_song_url = music_genres[selected_genre][selected_song]
     st.write(f"### {selected_song}")
-    st.write(f"Guarda il video su [YouTube]({selected_song_url})")
+    st.write(f"Listen the song on[YouTube]({selected_song_url})")
 else:
-    st.write("Genere musicale non trovato")
+    st.write("Music genre not found :(")
