@@ -40,6 +40,6 @@ if selected_genre in music_genres:
     )
     selected_song_url = music_genres[selected_genre][selected_song]
     st.write(f"### {selected_song}")
-    st.write(f"Listen the song on[YouTube]({selected_song_url})")
+    st.write(f"Listen the song on [YouTube]({selected_song_url})")
 else:
     st.write("Music genre not found :(")
