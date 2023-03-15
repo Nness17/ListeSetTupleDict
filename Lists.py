@@ -17,8 +17,7 @@ music_genres = {
         "Italiano Anthem - Sfera Ebbasta, Rvssian": "https://youtu.be/vUYn-mWkHXQ",
         "Tik Tok RMX (feat. Marracash, Guè Pequeno, Paky & Geolier) - Sfera Ebbasta": "https://youtu.be/R_vhQyDkL1E",
         "Famoso - Sfera Ebbasta": "https://youtu.be/fF84WK6KBgA",
-        "Sciroppo ft DrefGold (Prod. Charlie Charles, Daves The Kid) ft. DrefGold - Sfera Ebbasta": "https://youtu.be/6BCpyH1ZNZE"
-        }
+        "Sciroppo ft DrefGold (Prod. Charlie Charles, Daves The Kid) ft. DrefGold - Sfera Ebbasta": "https://youtu.be/6BCpyH1ZNZE
     },
     "Lazza": {
         "OUV3RTURE - Lazza": "https://www.youtube.com/watch?v=TTxqCWGBYhg",
