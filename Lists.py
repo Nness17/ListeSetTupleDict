@@ -1,5 +1,4 @@
 import streamlit as st
-st.checkbox(l)
 l = []
  
 # Adding Element into list
