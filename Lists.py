@@ -16,7 +16,10 @@ music_genres = {
         "Kendrick Lamar - HUMBLE.": "https://www.youtube.com/watch?v=tvTRZJ-4EyI",
         "Drake - In My Feelings": "https://www.youtube.com/watch?v=DRS_PpOrUZ4",
         "Notorious B.I.G. - Juicy": "https://www.youtube.com/watch?v=_JZom_gVfuw"
-    }
+    },
+    "Italian Rap": {
+        "OUV3RTURE - Lazza": "https://www.youtube.com/watch?v=TTxqCWGBYhg"
+    }     
 }
 
 # Definiamo l'interfaccia utente di Streamlit
