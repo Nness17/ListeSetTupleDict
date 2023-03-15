@@ -39,6 +39,5 @@ if selected_genre in music_genres:
     selected_song_url = music_genres[selected_genre][selected_song]
     st.write(f"### {selected_song}")
     st.write(f"Guarda il video su [YouTube]({selected_song_url})")
-    HTML(f'<iframe width="560" height="315" src="{selected_song_url}" frameborder="0" allowfullscreen></iframe>')
 else:
     st.write("Genere musicale non trovato")
