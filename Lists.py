@@ -30,7 +30,7 @@ selected_genre = st.sidebar.selectbox(
 
 # Mostrare la canzone selezionata
 if selected_genre in music_genres:
-    st.write(f" {selected_genre}" ## Songs)
+    st.write(f" {selected_genre} ## Songs")
     selected_song = st.selectbox(
         "Select the song",
         list(music_genres[selected_genre].keys())
