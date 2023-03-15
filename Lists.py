@@ -12,15 +12,18 @@ music_genres = {
         "The Rolling Stones - (I Can't Get No) Satisfaction": "https://www.youtube.com/watch?v=nrIPxlFzDi0",
         "Led Zeppelin - Stairway to Heaven": "https://www.youtube.com/watch?v=9Q7Vr3yQYWQ"
     },
-    "Hip Hop": {
+    "Sfera Ebbasta": {
         "Kendrick Lamar - HUMBLE.": "https://www.youtube.com/watch?v=tvTRZJ-4EyI",
         "Drake - In My Feelings": "https://www.youtube.com/watch?v=DRS_PpOrUZ4",
-        "Notorious B.I.G. - Juicy": "https://www.youtube.com/watch?v=_JZom_gVfuw"
-    },
-    "Italian Rap": {
-        "OUV3RTURE - Lazza": "https://www.youtube.com/watch?v=TTxqCWGBYhg",
-        "Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali": "https://youtu.be/l9WWa98S4OM",
+        "Notorious B.I.G. - Juicy": "https://www.youtube.com/watch?v=_JZom_gVfuw",
         
+    },
+    "Lazza": {
+        "OUV3RTURE - Lazza": "https://www.youtube.com/watch?v=TTxqCWGBYhg",
+        "Cenere - Lazza": "https://youtu.be/A5ab7U9RVLE",
+        "J - Lazza": "https://youtu.be/vgZoXnrN_eI",
+        "Alibi - Lazza": "https://youtu.be/vzHuYaS6Iio",
+        "SENZA RUMORE - Lazza": "https://youtu.be/dJmaFREMVnw"
     }     
 }
 
