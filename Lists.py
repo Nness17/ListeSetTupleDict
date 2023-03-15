@@ -6,7 +6,7 @@ l.append(5)
 l.append(10)
 print("Adding 5 and 10 in list", l)
 choice = st.selectbox('Which is your favourite football player?', l)
-st.write(l)
+st.write(choice)
 # Popping Elements from list
 l.pop()
 print("Popped one element from list", l)
