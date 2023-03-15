@@ -28,7 +28,7 @@ music_genres = {
 }
 
 # Definiamo l'interfaccia utente di Streamlit
-st.write("#ITALIAN MUSIC")
+st.write("###ITALIAN MUSIC")
 
 # Creiamo una barra laterale per scegliere il genere musicale
 selected_genre = st.sidebar.selectbox(
