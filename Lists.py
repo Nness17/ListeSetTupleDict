@@ -13,10 +13,12 @@ music_genres = {
         "Led Zeppelin - Stairway to Heaven": "https://www.youtube.com/watch?v=9Q7Vr3yQYWQ"
     },
     "Sfera Ebbasta": {
-        "Kendrick Lamar - HUMBLE.": "https://www.youtube.com/watch?v=tvTRZJ-4EyI",
-        "Drake - In My Feelings": "https://www.youtube.com/watch?v=DRS_PpOrUZ4",
-        "Notorious B.I.G. - Juicy": "https://www.youtube.com/watch?v=_JZom_gVfuw",
-        
+        "Tran Tran - Sfera Ebbasta": "https://youtu.be/tU_KbOs8w2o",
+        "Italiano Anthem - Sfera Ebbasta, Rvssian": "https://youtu.be/vUYn-mWkHXQ",
+        "Tik Tok RMX (feat. Marracash, Guè Pequeno, Paky & Geolier) - Sfera Ebbasta": "https://youtu.be/R_vhQyDkL1E",
+        "Famoso - Sfera Ebbasta": "https://youtu.be/fF84WK6KBgA",
+        "Sciroppo ft DrefGold (Prod. Charlie Charles, Daves The Kid) ft. DrefGold - Sfera Ebbasta": "https://youtu.be/6BCpyH1ZNZE"
+        }
     },
     "Lazza": {
         "OUV3RTURE - Lazza": "https://www.youtube.com/watch?v=TTxqCWGBYhg",
