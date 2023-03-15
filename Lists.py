@@ -1,45 +1,36 @@
 import streamlit as st
-l = []
- 
-# Adding Element into list
-l.append(5)
-l.append(10)
-print("Adding 5 and 10 in list", l)
-choice = st.selectbox('Which is your favourite football player?', l)
-st.write(choice)
-# Popping Elements from list
-l.pop()
-print("Popped one element from list", l)
-print()
- 
-# Set
-s = set()
- 
-# Adding element into set
-s.add(5)
-s.add(10)
-print("Adding 5 and 10 in set", s)
- 
-# Removing element from set
-s.remove(5)
-print("Removing 5 from set", s)
-print()
- 
-# Tuple
-t = tuple(l)
- 
-# Tuples are immutable
-print("Tuple", t)
-print()
- 
-# Dictionary
-d = {}
- 
-# Adding the key value pair
-d[5] = "Five"
-d[10] = "Ten"
-print("Dictionary", d)
- 
-# Removing key-value pair
-del d[10]
-print("Dictionary", d)
+
+# Creiamo una lista di frutti
+fruits = ["mela", "banana", "kiwi", "ananas", "arancia"]
+
+# Creiamo una tupla di città
+cities = ("Roma", "Milano", "Napoli", "Torino", "Firenze")
+
+# Creiamo un set di numeri
+numbers = {1, 2, 3, 4, 5}
+
+# Creiamo un dizionario di colori
+colors = {"rosso": "#FF0000", "verde": "#00FF00", "blu": "#0000FF"}
+
+# Definiamo l'interfaccia utente di Streamlit
+st.write("# Utilizzo di liste, tuple, set e dizionari in Python")
+
+# Mostriamo la lista di frutti
+st.write("### Lista di frutti")
+for fruit in fruits:
+    st.write(fruit)
+
+# Mostriamo la tupla di città
+st.write("### Tupla di città")
+for city in cities:
+    st.write(city)
+
+# Mostriamo il set di numeri
+st.write("### Set di numeri")
+for number in numbers:
+    st.write(number)
+
+# Mostriamo il dizionario di colori
+st.write("### Dizionario di colori")
+for key, value in colors.items():
+    st.write(f"{key}: {value}")
