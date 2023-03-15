@@ -1,5 +1,4 @@
 import streamlit as st
-from IPython.display import HTML
 
 # Definiamo i generi musicali e le rispettive canzoni
 music_genres = {
