@@ -1,11 +1,12 @@
-
+import streamlit as st
+st.checkbox(l)
 l = []
  
 # Adding Element into list
 l.append(5)
 l.append(10)
 print("Adding 5 and 10 in list", l)
- 
+st.checkbox(l)
 # Popping Elements from list
 l.pop()
 print("Popped one element from list", l)
