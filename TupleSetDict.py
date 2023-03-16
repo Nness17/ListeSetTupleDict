@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 def count_words(text):
     """
@@ -31,10 +32,12 @@ def show_word_counts(text):
     for word, count in top_words:
         st.write(f"{word}: {count}")
     
-    word_set_table = [(word, word_count[word]) for word in sorted(word_set)]
+    word_set_df = pd.DataFrame(sorted(word_set), columns=['Parola'])
+    word_set_df['Conteggio'] = word_set_df['Parola'].apply(lambda x: word_count[x])
+    word_set_df = word_set_df.sort_values('Parola')
     st.write("")
     st.write("Tutte le parole ordinate:")
-    st.write(word_set_table[word])
+    st.write(word_set_df)
 
 def main():
     st.title("Contatore di parole")
