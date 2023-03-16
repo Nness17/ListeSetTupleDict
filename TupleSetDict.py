@@ -34,7 +34,7 @@ def show_word_counts(text):
     word_set_table = [(word, word_count[word]) for word in sorted(word_set)]
     st.write("")
     st.write("Tutte le parole ordinate:")
-    st.write(word_set_table)
+    st.write(word_set_table[word])
 
 def main():
     st.title("Contatore di parole")
