@@ -33,7 +33,7 @@ def show_word_counts(text):
     for word, count in top_words:
         st.write(f"{word}: {count}")
     
-    word_set_df = pd.DataFrame(sorted(word_set), columns=['Parola'])
+    word_set_df = pd.DataFrame(sorted(word_set), columns=['Word'])
     word_set_df['Count'] = word_set_df['Word'].apply(lambda x: word_count[x])
     word_set_df = word_set_df.sort_values('Word')
     st.write("")
