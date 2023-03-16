@@ -2,15 +2,77 @@ import streamlit as st
 
 # Definiamo i generi musicali e le rispettive canzoni
 music_genres = {
-    "Pop": {
-        "Dua Lipa - Levitating": "https://www.youtube.com/watch?v=TUVcZfQe-Kw",
-        "Ariana Grande - positions": "https://www.youtube.com/watch?v=t9-iLYhyIgg",
-        "Ed Sheeran - Shape of You": "https://www.youtube.com/watch?v=JGwWNGJdvx8"
+    "Rosa Chemical": {
+        "Made In Italy (Sanremo 2023) prod. BDope - Rosa Chemical": "https://youtu.be/UQuoY73tUsw",
+        "Polka 3 prod. BDope - Rosa Chemical": "https://youtu.be/vu8DDbY0jZA",
+        "britney ;-) ft. MamboLosco, Radical - Rosa Chemical": "https://youtu.be/76Zny0XaV6Q",
+        "LA CANZONE NOSTRA ft. MACE, Salmo - BLANCO": "https://youtu.be/XE6lV6xseQ4",
+        "L'Isola delle Rose - BLANCO": "https://youtu.be/g2647z7McDE"
     },
-    "Rock": {
-        "Queen - Bohemian Rhapsody": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
-        "The Rolling Stones - (I Can't Get No) Satisfaction": "https://www.youtube.com/watch?v=nrIPxlFzDi0",
-        "Led Zeppelin - Stairway to Heaven": "https://www.youtube.com/watch?v=9Q7Vr3yQYWQ"
+    "BLANCO": {
+        "Notti in Bianco - BLANCO": "https://youtu.be/wppn2Via-Tk",
+        "Mi fai impazzire ft. Sfera Ebbasta - BLANCO": "https://youtu.be/FJNOkLCIg5Y",
+        "Finchè non mi seppelliscono - BLANCO": "https://youtu.be/7p09c3GgF4A",
+        "LA CANZONE NOSTRA ft. MACE, Salmo - BLANCO": "https://youtu.be/XE6lV6xseQ4",
+        "L'Isola delle Rose - BLANCO": "https://youtu.be/g2647z7McDE"
+    },
+    "Guè": {
+        "Mollami pt.2 - Guè": "https://youtu.be/ab4PdCyqbTI",
+        "Scooteroni RMX ft. Sfera Ebbasta - Marracash & Guè": "https://youtu.be/j3FXV0Ma3QA",
+        "Lamborghini (RMX) ft. Sfera Ebbasta, Elettra Lamborghini": "https://youtu.be/DkXgmrGlpjQ",
+        "Cookies N' Cream ft. ANNA, Sfera Ebbasta": "https://youtu.be/z_D_SP5YGh0",
+        "Salvador Dalì - Marracash & Guè": "https://youtu.be/rlaTV5MQTQY"
+    },
+    "Marracash": {
+        "Crudelia - I nervi - Marracash": "https://youtu.be/M8C_aieRM4Q",
+        "Crazy Love - Marracash": "https://youtu.be/JHqxzM2tZHs",
+        "∞ LOVE ft. Guè - Marracash": "https://youtu.be/RN4zhaQEa7I",
+        "Nemesi ft. BLANCO - Marracash": "https://youtu.be/3pVCFx1kptk",
+        "Bravi a cadere - I polmoni - Marracash": "https://youtu.be/hPjV6yu4HW4"
+    },
+    "Shiva": {
+        "Non lo sai - Shiva": "https://youtu.be/gbcYVcAaIIc",
+        "Alleluia ft. Sfera Ebbasta - Shiva": "https://youtu.be/nZdNV5PnZws",
+        "TAKE 4 - Shiva": "https://youtu.be/dWcipGS717Q",
+        "Aston Martin ft. Headie One - Shiva": "https://youtu.be/sBtYmYTD2d0",
+        "Vorrei ft. Lazza - Shiva": "https://youtu.be/_mkIGhbeMLM"
+    },
+    "Ghali": {
+        "Wily Wily - Ghali": "https://youtu.be/QqbJt1qnXTQ",
+        "Habibi - Ghali": "https://youtu.be/fgt6luBwzz0",
+        "Dende - Ghali": "https://youtu.be/wkSgZ9WDlPs",
+        "Peace & Love ft. Sfera Ebbasta, Charlie Charles - Ghali": "https://youtu.be/PxQVexjVlg4",
+        "Boogieman ft. Salmo - Ghali": "https://youtu.be/-7lqGbIE3aM"
+    },
+    "Fabri Fibra": {
+        "Tranne te - Fabri Fibra": "https://youtu.be/qrM0z3v3LUY",
+        "Applausi per Fibra - Fabri Fibra": "https://youtu.be/Ji8RqJGEiI8",
+        "Fenomeno - Fabri Fibra": "https://youtu.be/EJmRU9vOsgo",
+        "Propaganda ft. Colapesce, Dimartino": "https://youtu.be/VZgtEU4B70o",
+        "Pamplona ft. TheGiornalisti": "https://youtu.be/84aJv0NelEU"
+    },
+    "Nitro": {
+        "Storia di un defunto artista - Nitro": "https://youtu.be/3GsfoK-s3Ww",
+        "Rotten - Nitro": "https://youtu.be/-uSp26jdilA",
+        "Chairaggione ft. Salmo - Nitro": "https://youtu.be/B3z388S9iPU",
+        "Pleasantville - Nitro": "https://youtu.be/O5JZ8kfbZ0A",
+        "Trankilo ft. Vegas Jones - Nitro": "https://youtu.be/h-Aqys9MfoQ"
+    },
+    "Izi": {
+        "Chic - Izi": "https://youtu.be/HFqstkhwFho",
+        "Aeroplanini di carta ft. Rkomi - Izi": "https://youtu.be/SnKvCdI5Hag",
+        "Wild Bandana ft. Tedua, Vaz Tè": "https://youtu.be/B3z388S9iPU",
+        "48H - Izi": "https://youtu.be/PCWFsVmT144",
+        "Tutto apposto ft. Sfera Ebbasta - Izi": "https://youtu.be/npW2okHL_0A"
+    },
+    "Gemitaiz & MadMan": {
+        "Veleno 6 - Gemitaiz & MadMan": "https://youtu.be/9jDw0vaA__g",
+        "Veleno 7 - (Prod. Mixer T, PK) - Gemitaiz & MadMan": "https://youtu.be/ykGRZ4Li3OU",
+        "Veleno 8 - Gemitaiz & MadMan": "https://youtu.be/059sh0cmm-0",
+        "Senza di me ft. Venerus & FRANCO126 - Gemitaiz",
+        "Toradol - Gemitaiz": "https://youtu.be/mllaiuAEeqg",
+        "Bolla Papale FST - MadMan": "https://youtu.be/TvnTUOjgGyQ",
+        "Dopperlganger - MadMan": "https://youtu.be/tN_b7VT9U2w"
     },
     "Sfera Ebbasta": {
         "Tran Tran - Sfera Ebbasta": "https://youtu.be/tU_KbOs8w2o",
