@@ -26,25 +26,25 @@ def show_word_counts(text):
     top_words = sorted_word_count[:10]
     word_set = set(word_count.keys())
     
-    st.write("Numero totale di parole:", len(word_count))
-    st.write("Numero di parole uniche:", len(word_set))
+    st.write("Total number of words:", len(word_count))
+    st.write("Total number of unique words:", len(word_set))
     st.write("")
-    st.write("10 parole più frequenti:")
+    st.write("10 most frequent words:")
     for word, count in top_words:
         st.write(f"{word}: {count}")
     
     word_set_df = pd.DataFrame(sorted(word_set), columns=['Parola'])
-    word_set_df['Conteggio'] = word_set_df['Parola'].apply(lambda x: word_count[x])
-    word_set_df = word_set_df.sort_values('Parola')
+    word_set_df['Count'] = word_set_df['Word'].apply(lambda x: word_count[x])
+    word_set_df = word_set_df.sort_values('Word')
     st.write("")
-    st.write("Tutte le parole ordinate:")
+    st.write("All the words sorted:")
     st.write(word_set_df)
 
 def main():
-    st.title("Contatore di parole")
-    st.write("Inserisci il testo da analizzare:")
+    st.title("Words counter")
+    st.write("Inserisci here the text to analyze:")
     text = st.text_area("", height=200)
-    if st.button("Conta parole"):
+    if st.button("Words counter"):
         show_word_counts(text)
 
 if __name__ == "__main__":
