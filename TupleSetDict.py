@@ -8,14 +8,13 @@ def count_words(text):
     """
     words = text.lower().split()
     word_count = {}
-    total_count = 0
     for word in words:
         if word not in word_count:
             word_count[word] = 1
         else:
             word_count[word] += 1
-        total_count += 1
-    return word_count, total_count
+    return word_count
+
 
 def show_word_counts(text):
     """
