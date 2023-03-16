@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 def count_words(text):
     """
@@ -7,14 +8,11 @@ def count_words(text):
     """
     words = text.lower().split()
     word_count = {}
-    unique_words = set()
     for word in words:
-        if word not in unique_words:
-            if word not in word_count:
-                word_count[word] = 1
-            else:
-                word_count[word] += 1
-            unique_words.add(word)
+        if word not in word_count:
+            word_count[word] = 1
+        else:
+            word_count[word] += 1
     return word_count
 
 def show_word_counts(text):
@@ -25,12 +23,21 @@ def show_word_counts(text):
     word_count = count_words(text)
     sorted_word_count = sorted(word_count.items(), key=lambda x: x[1], reverse=True)
     top_words = sorted_word_count[:10]
-    st.write("Numero totale di parole:", sum(word_count.values()))
-    st.write("Numero di parole uniche:", len(word_count))
+    word_set = set(word_count.keys())
+    
+    st.write("Numero totale di parole:", len(word_count))
+    st.write("Numero di parole uniche:", len(word_set))
     st.write("")
     st.write("10 parole più frequenti:")
     for word, count in top_words:
         st.write(f"{word}: {count}")
+    
+    word_set_df = pd.DataFrame(sorted(word_set), columns=['Parola'])
+    word_set_df['Conteggio'] = word_set_df['Parola'].apply(lambda x: word_count[x])
+    word_set_df = word_set_df.sort_values('Parola')
+    st.write("")
+    st.write("Tutte le parole ordinate:")
+    st.write(word_set_df)
 
 def main():
     st.title("Contatore di parole")
